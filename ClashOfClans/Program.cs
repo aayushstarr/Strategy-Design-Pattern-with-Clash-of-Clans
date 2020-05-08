@@ -1,4 +1,5 @@
 ﻿using System;
+using ClashOfClans.Classes;
 
 namespace ClashOfClans
 {
@@ -18,6 +19,15 @@ namespace ClashOfClans
             g.Display();
             Console.WriteLine("I am attacking by " + g.Attack() + "%\n\n");
 
+            Dragon d = new Dragon();
+            d.Display();
+            d.Fly();
+            Console.WriteLine("I am attacking by " + d.Attack() + "%\n\n");
+
+            Balloon balloon = new Balloon();
+            balloon.Display();
+            balloon.Fly();
+            Console.WriteLine("I am attacking by " + balloon.Attack() + "%\n\n");
 
             Console.ReadLine();
         }
