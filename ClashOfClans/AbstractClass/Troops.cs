@@ -4,7 +4,6 @@ namespace ClashOfClans
 {
     abstract class Troops
     {
-
         public int Hitpoints()
         {
             return 78;
@@ -21,6 +20,5 @@ namespace ClashOfClans
         }
 
         public abstract void Display();
-
     }
 }
