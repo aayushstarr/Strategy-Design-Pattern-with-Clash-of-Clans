@@ -25,12 +25,12 @@ namespace ClashOfClans
             Dragon d = new Dragon();
             d.Display();
             d.Fly();
-            Console.WriteLine("I am attacking by " + d.Attack() + "%\n\n");
+            Console.WriteLine("I am attacking by " + d.AttackingRate() + "%\n\n");
 
             Balloon balloon = new Balloon();
             balloon.Display();
             balloon.Fly();
-            Console.WriteLine("I am attacking by " + balloon.Attack() + "%\n\n");
+            Console.WriteLine("I am attacking by " + balloon.AttackingRate() + "%\n\n");
 
             Console.ReadLine();
         }
