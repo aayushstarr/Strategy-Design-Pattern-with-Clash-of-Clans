@@ -6,9 +6,17 @@ namespace ClashOfClans
 {
     class Barbarian : Troops
     {
-        public void Fly() {
+        public void Fly()
+        {
             Console.WriteLine("Can't fly");
         }
+
+        public int FlyingSpeed()
+        {
+            return 0;
+        }
+
+
         public override void Display()
         {
             Console.WriteLine("I look like Barbarian.");
