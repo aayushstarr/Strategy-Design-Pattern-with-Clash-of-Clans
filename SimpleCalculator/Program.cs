@@ -1,31 +1,29 @@
-﻿using System;
-
-namespace SimpleCalculator
+﻿namespace SimpleCalculator
 {
     class Program
     {
-        static void Main(string[] args) {
+        static void Main(string[] args)
+        {
             double num1 = 2;
             double num2 = 3;
-            double result = 0.0;
             string choice = "+";
+            Operations operate = new Operations(num1, num2);
 
-            switch (choice) {
+            switch (choice)
+            {
                 case "+":
-                    result = num1 + num2;
+                    operate.Addition();
                     break;
                 case "-":
-                    result = num1 - num2;
+                    operate.Substraction();
                     break;
                 case "*":
-                    result = num1 * num2;
+                    operate.Multiplication();
                     break;
                 case "/":
-                    result = num1 / num2;
+                    operate.Division();
                     break;
             }
-
-            Console.WriteLine("Result is " + result);
         }
     }
 }
