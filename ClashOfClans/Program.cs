@@ -12,11 +12,11 @@ namespace ClashOfClans
 
             Barbarian b = new Barbarian();
             b.Display();
-            Console.WriteLine("I am attacking by " + b.Attack() + "%\n\n");
+            Console.WriteLine("I am attacking by " + b.AttackingRate() + "%\n\n");
 
             Giant g = new Giant();
             g.Display();
-            Console.WriteLine("I am attacking by " + g.Attack() + "%\n\n");
+            Console.WriteLine("I am attacking by " + g.AttackingRate() + "%\n\n");
 
 
             Console.ReadLine();

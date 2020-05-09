@@ -9,9 +9,13 @@ namespace ClashOfClans
             return 78;
         }
 
-        public int Attack()
+        public int AttackingRate()
         {
             return 18;
+        }
+
+        public void Focus() {
+            Console.WriteLine("Attack whatever you see first either Defense or Resources.");
         }
 
         public TimeSpan TrainingTime()
