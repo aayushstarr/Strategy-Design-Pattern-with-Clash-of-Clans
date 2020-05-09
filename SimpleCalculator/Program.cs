@@ -1,4 +1,8 @@
-﻿namespace SimpleCalculator
+﻿using System;
+using SimpleCalculator.Implementation;
+using SimpleCalculator.Interface;
+
+namespace SimpleCalculator
 {
     class Program
     {
@@ -6,24 +10,9 @@
         {
             double num1 = 2;
             double num2 = 3;
-            string choice = "+";
-            Operations operate = new Operations(num1, num2);
-
-            switch (choice)
-            {
-                case "+":
-                    operate.Addition();
-                    break;
-                case "-":
-                    operate.Substraction();
-                    break;
-                case "*":
-                    operate.Multiplication();
-                    break;
-                case "/":
-                    operate.Division();
-                    break;
-            }
+            Context myCalculator = new Context(new Addition());
+            double result = myCalculator.execute(num1, num2);
+            Console.WriteLine("Result is " + result);
         }
     }
 }
