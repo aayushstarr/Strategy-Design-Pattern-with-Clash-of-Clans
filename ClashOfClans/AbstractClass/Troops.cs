@@ -24,6 +24,10 @@ namespace ClashOfClans
             Console.WriteLine("I can fly");
         }
 
+        public int FlyingSpeed()
+        {
+            return 10;
+        }
         public abstract void Display();
     }
 }
