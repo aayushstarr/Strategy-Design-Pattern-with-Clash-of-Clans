@@ -13,21 +13,21 @@ namespace ClashOfClans
 
             Barbarian b = new Barbarian();
             b.Display();
-            Console.WriteLine("I am attacking by " + b.Attack() + "%\n\n");
+            Console.WriteLine("I am attacking by " + b.AttackingRate() + "%\n\n");
 
             Giant g = new Giant();
             g.Display();
-            Console.WriteLine("I am attacking by " + g.Attack() + "%\n\n");
+            Console.WriteLine("I am attacking by " + g.AttackingRate() + "%\n\n");
 
             Dragon d = new Dragon();
             d.Display();
             d.Fly();
-            Console.WriteLine("I am attacking by " + d.Attack() + "%\n\n");
+            Console.WriteLine("I am attacking by " + d.AttackingRate() + "%\n\n");
 
             Balloon balloon = new Balloon();
             balloon.Display();
             balloon.Fly();
-            Console.WriteLine("I am attacking by " + balloon.Attack() + "%\n\n");
+            Console.WriteLine("I am attacking by " + balloon.AttackingRate() + "%\n\n");
 
             Console.ReadLine();
         }

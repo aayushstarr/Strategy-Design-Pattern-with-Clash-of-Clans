@@ -9,9 +9,14 @@ namespace ClashOfClans
             return 78;
         }
 
-        public int Attack()
+        public int AttackingRate()
         {
             return 18;
+        }
+
+        public void Focus()
+        {
+            Console.WriteLine("Attack whatever you see first.");
         }
 
         public TimeSpan TrainingTime()
@@ -24,10 +29,6 @@ namespace ClashOfClans
             Console.WriteLine("I can fly");
         }
 
-        public int FlyingSpeed()
-        {
-            return 10;
-        }
         public abstract void Display();
     }
 }
