@@ -5,9 +5,9 @@ using ClashOfClans.Interface;
 
 namespace ClashOfClans.AbstractClass {
   abstract class Troops {
-    public IAttackType attackType;
-    public IMovement movement;
-    public ILevel level;
+    protected IAttackType attackType;
+    protected IMovement movement;
+    protected ILevel level;
 
     public int HousingSpace() {
       return 5;

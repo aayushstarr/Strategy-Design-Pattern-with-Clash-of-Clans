@@ -10,11 +10,8 @@ namespace ClashOfClans {
       Console.WriteLine("--------------------------\n\n");
 
       Console.WriteLine("Now look at our first Troop");
-      Troops troop = new Giant();
-      troop.Display();
-      troop.TrainingTime();
-      troop.TrainingCost();
-      troop.Attack();
+      Context troopContext = new Context(new Barbarian());
+      troopContext.GetTroopInfo();
 
     }
   }
